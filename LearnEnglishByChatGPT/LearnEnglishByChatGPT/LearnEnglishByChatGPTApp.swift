@@ -11,7 +11,8 @@ import SwiftUI
 struct LearnEnglishByChatGPTApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            WelcomeView()
+                .environmentObject(ViewModel())
         }
     }
 }
